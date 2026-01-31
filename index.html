@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Experience</title>
+    <!-- Styles will be imported via main.js in Vite, but for pure HTML fallback, we can link it. 
+         However, in Vite, we usually just import the CSS in JS. 
+         Wait, let's keep it safe. -->
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading Experience...</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the Journey</h1>
+        <p>Scroll down to reveal the story.</p>
+        <div class="scroll-indicator">↓ Scroll</div>
+    </section>
+
+    <!-- Scrollytelling Section -->
+    <div class="scrolly-container">
+        <div class="sticky-canvas">
+            <canvas id="hero-lightpass"></canvas>
+        </div>
+    </div>
+
+    <!-- End Content Section -->
+    <section class="end-content" id="end-content">
+        <h1>About Me</h1>
+
+        <div class="grid-section">
+            <div class="card">
+                <h3>Who I Am</h3>
+                <p>Hello! I am a passionate creator and developer dedicated to crafting immersive digital experiences.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>What I Do</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Interactive Storytelling</li>
+                    <li>Creative Coding</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>What I Know</h3>
+                <ul>
+                    <li>JavaScript / TypeScript</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>WebGL / Three.js</li>
+                    <li>React / Next.js</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Let's Work Together</h3>
+                <p>I'm available for freelance work and collaborations. If you have an idea, let's bring it to life.</p>
+                <a href="#" class="connect-btn">Connect With Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vite Entry Point -->
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
